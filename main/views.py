@@ -1,0 +1,13 @@
+from django.shortcuts import render
+
+def home(request):
+    return render(request, 'main/home.html')
+
+def about(request):
+    return render(request, 'main/about.html')
+
+def portfolio(request):
+    return render(request, 'main/portfolio.html')
+
+def blog(request):
+    return render(request, 'main/blog.html')

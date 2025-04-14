@@ -1,0 +1,26 @@
+:root{
+    --primary-color: #00d4f8;
+    --secondary-color: #fff;
+    --text-color: #e0e0e0;
+}
+
+img{
+    width: 100%;
+}
+
+nav .logo{
+    width: 200px;
+    height: 100px;
+}
+
+
+nav .row{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav #navbarNav ul li a{
+    color: var(--primary-color);
+}
