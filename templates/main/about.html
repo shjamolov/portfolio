@@ -1,5 +1,39 @@
+
 {% extends 'base.html' %}
+{% load static %}
 {% block title %}About{% endblock %}
 {% block content %}
-<h1>About Page</h1>
+
+<div class="hex-grid" id="hexContainer">
+    <!-- Hexlar -->
+    <div class="hex"></div>   
+    <!-- Yana ko‘paytirish mumkin -->
+</div>
+
+<div class="main_right">
+    <h1>Hi! my name is Shukhrat Jamolov</h1>
+    <p>Full Stack Python Developer | Technology Enthusiast</p>
+    <div class="social_section">
+        <i class="fa-solid fa-at"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-github"></i>
+        <i class="fa-brands fa-gitlab"></i>
+        <i class="fa-brands fa-telegram"></i>
+        <i class="fa-solid fa-envelope"></i>
+        <i class="fa-brands fa-instagram"></i>
+    </div>
+    <span><i class="fa-solid fa-location-dot"></i>Tashkent | Uzbekistan</span>
+</div>
+
+<div class="main_bottom">
+    <p>"I aim to solve problems through my own solutions in programming and aspire to work in the field of data science in the future."</p>
+</div>
+
+
+
+
+{% endblock %}
+
+{% block extra_js %}
+<script src="{% static 'main/js/index.js' %}"></script>
 {% endblock %}
