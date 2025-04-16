@@ -16,7 +16,7 @@ const iconClasses = [
 ];
 
 const container = document.getElementById('hexContainer');
-const totalHexes = 125;
+const totalHexes = 119;
 
 for (let i = 0; i < totalHexes; i++) {
     const hex = document.createElement('div');
@@ -25,3 +25,113 @@ for (let i = 0; i < totalHexes; i++) {
     hex.innerHTML = `<i class="${randomIcon}"></i>`;
     container.appendChild(hex);
 }
+
+const hexes = document.querySelectorAll('.hex');
+
+// Takrorlanmaydigan tasodifiy indexlar olish funksiyasi
+function getRandomIndexes(length, count) {
+    const indexes = new Set();
+    while (indexes.size < count) {
+        indexes.add(Math.floor(Math.random() * length));
+    }
+    return Array.from(indexes);
+}
+
+// Har 2 soniyada 3 ta tasodifiy hexagonni "active" qilish
+setInterval(() => {
+    hexes.forEach(hex => hex.classList.remove('active'));
+
+    const activeIndexes = getRandomIndexes(hexes.length, 3);
+    activeIndexes.forEach(index => {
+        hexes[index].classList.add('active');
+    });
+}, 2000);
+
+
+const textEl = document.getElementById('animated-text');
+const text = textEl.innerText;
+textEl.innerHTML = '';
+
+  // Harflarni span ichiga o'raymiz
+const spans = [...text].map((char, i) => {
+    const span = document.createElement('span');
+    span.textContent = char === ' ' ? '\u00A0' : char;
+    textEl.appendChild(span);
+    return span;
+});
+
+const duration = 0.4; // har bir harfga animatsiya uzunligi (soniyada)
+const delayBetween = 0.1; // harflar orasidagi kechikish (s)
+const totalDuration = spans.length * delayBetween + duration;
+
+function animateWave() {
+    spans.forEach((span, i) => {
+      span.style.animation = 'none';
+      void span.offsetWidth; // force reflow
+      span.style.animation = `waveColor ${duration}s ease-in-out`;
+      span.style.animationDelay = `${i * delayBetween}s`;
+    });
+}
+
+animateWave();
+setInterval(animateWave, totalDuration * 1000);
+
+
+
+
+const iconList = [
+    'fa-brands fa-python',
+    'fa-brands fa-js',
+    'fa-brands fa-html5',
+    'fa-brands fa-css3-alt',
+    'fa-brands fa-github',
+    'fa-brands fa-docker',
+    'fa-brands fa-react',
+    'fa-brands fa-vuejs',
+    'fa-brands fa-node-js',
+    'fa-brands fa-telegram',
+    'fa-brands fa-linkedin',
+    'fa-brands fa-instagram'
+  ];
+  
+  const hexGrid = document.getElementById('aboutHexGrid');
+
+  // 66 ta hex yaratish
+  for (let i = 0; i < 66; i++) {
+    const hex = document.createElement('div');
+    hex.classList.add('about_hex');
+    const icon = document.createElement('i');
+    icon.className = iconList[Math.floor(Math.random() * iconList.length)];
+    hex.appendChild(icon);
+    hexGrid.appendChild(hex);
+  }
+  
+  // Funksiya: takrorlanmaydigan tasodifiy indexlar olish
+  function getRandomIndexes(arrayLength, count) {
+    const indexes = new Set();
+    while (indexes.size < count) {
+      indexes.add(Math.floor(Math.random() * arrayLength));
+    }
+    return Array.from(indexes);
+  }
+  
+  // Animatsiya: har 2 soniyada 3 ta tasodifiy hex aktiv bo‘ladi
+  setInterval(() => {
+    const hexes = document.querySelectorAll('.about_hex');
+  
+    // Hammasini tozalaymiz
+    hexes.forEach(hex => {
+      hex.classList.remove('active');
+      hex.querySelector('i').style.color = '#000'; // Default icon rangi
+    });
+  
+    // 3 tasodifiy hex faollashtiramiz
+    const activeIndexes = getRandomIndexes(hexes.length, 3);
+    activeIndexes.forEach(i => {
+      const selected = hexes[i];
+      selected.classList.add('active');
+      selected.querySelector('i').style.color = '#000'; // Active icon rangi
+    });
+  
+  }, 2000);
+  
