@@ -1,59 +1,265 @@
-
 {% extends 'base.html' %}
 {% load static %}
 {% block title %}About{% endblock %}
 {% block content %}
 
 <div class="hex-grid" id="hexContainer">
-    <!-- Hexlar -->
-    <div class="hex"></div>   
-    <!-- Yana ko‘paytirish mumkin -->
+  <!-- Hexlar -->
+  <div class="hex"></div>
+  <!-- Yana ko‘paytirish mumkin -->
 </div>
 
 <div class="main_right">
-    <h1>Hi! my name is Shukhrat Jamolov</h1>
-    <p>Full Stack Python Developer | Technology Enthusiast</p>
-    <div class="social_section">
-        <a href=""><i class="fa-solid fa-at"></i></a>
-        <a href=""><i class="fa-brands fa-linkedin"></i></a>
-        <a href=""><i class="fa-brands fa-github"></i></a>
-        <a href=""><i class="fa-brands fa-gitlab"></i></a>
-        <a href=""><i class="fa-brands fa-telegram"></i></a>
-        <a href=""><i class="fa-solid fa-envelope"></i></a>
-        <a href=""><i class="fa-brands fa-instagram"></i></a>
-    </div>
-    <span><i class="fa-solid fa-location-dot"></i>Tashkent | Uzbekistan</span>
+  <h1>Hi! my name is Shukhrat Jamolov</h1>
+  <p>Full Stack Python Developer | Technology Enthusiast</p>
+  <div class="social_section">
+    <a href=""><i class="fa-solid fa-at"></i></a>
+    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+    <a href=""><i class="fa-brands fa-github"></i></a>
+    <a href=""><i class="fa-brands fa-gitlab"></i></a>
+    <a href=""><i class="fa-brands fa-telegram"></i></a>
+    <a href=""><i class="fa-solid fa-envelope"></i></a>
+    <a href=""><i class="fa-brands fa-instagram"></i></a>
+  </div>
+  <span><i class="fa-solid fa-location-dot"></i>Tashkent | Uzbekistan</span>
 </div>
 
 <div class="main_bottom">
-    <p id="animated-text">"I aim to solve problems through my own solutions in programming and aspire to work in the field of data science in the future."</p>
+  <p id="animated-text">"I aim to solve problems through my own solutions in programming and aspire to work in the
+    field of data science in the future."</p>
 </div>
 
 <div class="about">
-    <h2>About</h2>
-        <div class="about_container">
-            <div class="about_content">
-                <div>
-                    <p>Hello! I’m Shukhrat Jamolov, a 31-year-old Full Stack Python Developer with a strong passion for solving real-world problems through clean and efficient code. Since 2018, I’ve been working at United Distribution as a 1C Database Operator, where I manage and maintain critical business data. My goal is to continuously grow as a developer and contribute to impactful, tech-driven solutions.</p>
-                </div>
-                <div>
-                    <p>I began my programming journey in 2018 by completing a Frontend Development course at Proweb Academy. Later, in 2024, I strengthened my skills by graduating from the Full Stack Python Developer course at Bobir Akilkhanov Academy. My technical expertise includes Python, Django, MySQL, as well as HTML, CSS, and JavaScript.</p>
-                </div>
-                <div>
-                    <p>I am committed to establishing myself in the field of Data Science by mastering deep analytics and machine learning technologies to solve real-world problems. In 2025, I plan to dive deeper into this field and expand my knowledge and skills.</p>
-                </div>
-            </div>
-            <div class="about_hex_animation">
-                <div class="about_hex_grid" id="aboutHexGrid"></div>
-            </div>
-        </div>
+  <h2>About</h2>
+  <div class="about_container">
+    <div class="about_content">
+      <div>
+        <p>Hello! I’m Shukhrat Jamolov, a 31-year-old Full Stack Python Developer with a strong passion for
+          solving real-world problems through clean and efficient code. Since 2018, I’ve been working at
+          United Distribution as a 1C Database Operator, where I manage and maintain critical business data.
+          My goal is to continuously grow as a developer and contribute to impactful, tech-driven solutions.
+        </p>
+      </div>
+      <div>
+        <p>I began my programming journey in 2018 by completing a Frontend Development course at Proweb Academy.
+          Later, in 2024, I strengthened my skills by graduating from the Full Stack Python Developer course
+          at Bobir Akilkhanov Academy. My technical expertise includes Python, Django, MySQL, as well as HTML,
+          CSS, and JavaScript.</p>
+      </div>
+      <div>
+        <p>I am committed to establishing myself in the field of Data Science by mastering deep analytics and
+          machine learning technologies to solve real-world problems. In 2025, I plan to dive deeper into this
+          field and expand my knowledge and skills.</p>
+      </div>
+    </div>
+    <div class="about_hex_animation">
+      <div class="about_hex_grid" id="aboutHexGrid"></div>
+    </div>
+  </div>
 </div>
 
 
+<div class="skills">
+  <h2>Hard & Soft Skills</h2>
+  <div class="container hard">
+    <div class="skill">
+      <div class="circle-container" data-percentage="90">
+        <svg>
+          <circle class="bg"></circle>
+          <circle class="progress"></circle>
+        </svg>
+        <i class="fab fa-python icon"></i>
+        <div class="percentage">0%</div>
+      </div>
+      <div class="tech-name">Python</div>
+    </div>
+
+    <div class="skill">
+      <div class="circle-container" data-percentage="70">
+        <svg>
+          <circle class="bg"></circle>
+          <circle class="progress"></circle>
+        </svg>
+        <i class="fab fa-python icon"></i>
+        <div class="percentage">0%</div>
+      </div>
+      <div class="tech-name">Django</div>
+    </div>
+
+    <div class="skill">
+      <div class="circle-container" data-percentage="98">
+        <svg>
+          <circle class="bg"></circle>
+          <circle class="progress"></circle>
+        </svg>
+        <i class="fab fa-html5 icon"></i>
+        <div class="percentage">0%</div>
+      </div>
+      <div class="tech-name">HTML</div>
+    </div>
+
+    <div class="skill">
+      <div class="circle-container" data-percentage="95">
+        <svg>
+          <circle class="bg"></circle>
+          <circle class="progress"></circle>
+        </svg>
+        <i class="fab fa-css3-alt icon"></i>
+        <div class="percentage">0%</div>
+      </div>
+      <div class="tech-name">CSS</div>
+    </div>
+
+    <div class="skill">
+      <div class="circle-container" data-percentage="20">
+        <svg>
+          <circle class="bg"></circle>
+          <circle class="progress"></circle>
+        </svg>
+        <i class="fab fa-js icon"></i>
+        <div class="percentage">0%</div>
+      </div>
+      <div class="tech-name">JavaScript</div>
+    </div>
+
+    <div class="skill">
+      <div class="circle-container" data-percentage="40">
+        <svg>
+          <circle class="bg"></circle>
+          <circle class="progress"></circle>
+        </svg>
+        <i class="fas fa-database icon"></i>
+        <div class="percentage">0%</div>
+      </div>
+      <div class="tech-name">MySQL</div>
+    </div>
+
+    <div class="skill">
+      <div class="circle-container" data-percentage="70">
+        <svg>
+          <circle class="bg"></circle>
+          <circle class="progress"></circle>
+        </svg>
+        <i class="fab fa-git-alt icon"></i>
+        <div class="percentage">0%</div>
+      </div>
+      <div class="tech-name">Git</div>
+    </div>
+
+    <div class="skill">
+      <div class="circle-container" data-percentage="30">
+        <svg>
+          <circle class="bg"></circle>
+          <circle class="progress"></circle>
+        </svg>
+        <i class="fab fa-docker icon"></i>
+        <div class="percentage">0%</div>
+      </div>
+      <div class="tech-name">Docker</div>
+    </div>
+  </div>
+  <div class="container soft">
+    <div class="skill">
+      <div class="circle-container" data-percentage="90">
+        <svg>
+          <circle class="bg"></circle>
+          <circle class="progress"></circle>
+        </svg>
+        <i class="fa-solid fa-comments icon"></i>
+        <div class="percentage">0%</div>
+      </div>
+      <div class="tech-name">Communication</div>
+    </div>
+
+    <div class="skill">
+      <div class="circle-container" data-percentage="85">
+        <svg>
+          <circle class="bg"></circle>
+          <circle class="progress"></circle>
+        </svg>
+        <i class="fa-solid fa-people-group icon"></i>
+        <div class="percentage">0%</div>
+      </div>
+      <div class="tech-name">Teamwork</div>
+    </div>
+
+    <div class="skill">
+      <div class="circle-container" data-percentage="80">
+        <svg>
+          <circle class="bg"></circle>
+          <circle class="progress"></circle>
+        </svg>
+        <i class="fa-solid fa-lightbulb icon"></i>
+        <div class="percentage">0%</div>
+      </div>
+      <div class="tech-name">Problem Solving</div>
+    </div>
+
+    <div class="skill">
+      <div class="circle-container" data-percentage="75">
+        <svg>
+          <circle class="bg"></circle>
+          <circle class="progress"></circle>
+        </svg>
+        <i class="fa-solid fa-clock icon"></i>
+        <div class="percentage">0%</div>
+      </div>
+      <div class="tech-name">Time Management</div>
+    </div>
+
+    <div class="skill">
+      <div class="circle-container" data-percentage="80">
+        <svg>
+          <circle class="bg"></circle>
+          <circle class="progress"></circle>
+        </svg>
+        <i class="fa-solid fa-shuffle icon"></i>
+        <div class="percentage">0%</div>
+      </div>
+      <div class="tech-name">Adaptability</div>
+    </div>
+
+    <div class="skill">
+      <div class="circle-container" data-percentage="95">
+        <svg>
+          <circle class="bg"></circle>
+          <circle class="progress"></circle>
+        </svg>
+        <i class="fa-solid fa-book icon"></i>
+        <div class="percentage">0%</div>
+      </div>
+      <div class="tech-name">Self-learning</div>
+    </div>
+
+    <div class="skill">
+      <div class="circle-container" data-percentage="85">
+        <svg>
+          <circle class="bg"></circle>
+          <circle class="progress"></circle>
+        </svg>
+        <i class="fa-solid fa-brain icon"></i>
+        <div class="percentage">0%</div>
+      </div>
+      <div class="tech-name">Critical Thinking</div>
+    </div>
+
+    <div class="skill">
+      <div class="circle-container" data-percentage="70">
+        <svg>
+          <circle class="bg"></circle>
+          <circle class="progress"></circle>
+        </svg>
+        <i class="fa-solid fa-user-tie icon"></i>
+        <div class="percentage">0%</div>
+      </div>
+      <div class="tech-name">Leadership</div>
+    </div>
+  </div>
 
 
-{% endblock %}
 
-{% block extra_js %}
-<script src="{% static 'main/js/index.js' %}"></script>
-{% endblock %}
+  {% endblock %}
+
+  {% block extra_js %}
+  <script src="{% static 'main/js/index.js' %}"></script>
+  {% endblock %}
