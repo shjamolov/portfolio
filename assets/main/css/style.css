@@ -259,7 +259,7 @@ nav #navbarNav form button img {
   font-weight: 900;
 }
 
-.skills .container {
+.skills .hard,.skills .soft {
   display: flex;
   justify-content: space-between;
 }
@@ -397,4 +397,75 @@ nav #navbarNav form button img {
   text-align: center;
   color: var(--primary-color);
   font-size: 18px;
+}
+
+/* ================================================================ */
+footer{
+  padding: 96px 0px 0px 0px;
+}
+
+footer h2{
+  font-size: 48px;
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 56px;
+  font-weight: 900;
+}
+
+footer .logo{
+  width: 150px;
+  height: auto;
+}
+
+footer .contact{
+  display: flex;
+  align-items: center;
+}
+
+footer .contact .navbar-nav{
+  display: flex;
+  flex-direction: row;
+  margin: 0px 70px;
+}
+
+footer .social_section a{
+  margin-right: 20px;
+}
+footer .social_section i{
+  font-size: 22px;
+  color: var(--text-color);
+}
+
+footer .social_section i:hover{
+  color: var(--primary-color);
+}
+
+footer .contact .navbar-nav li{
+  margin-right: 20px;
+}
+
+footer .contact .navbar-nav li a{
+  font-size: 22px;
+  color: var(--text-color);
+}
+
+footer .contact .navbar-nav li a:hover{
+  color: var(--primary-color);
+}
+
+footer .contact .tel a{
+  font-size: 20px;
+  color: var(--text-color);
+}
+
+footer .contact .tel a:hover{
+  color: var(--primary-color);
+}
+
+footer .contact .tel a i{
+  margin-right: 15px;
+}
+
+footer .bottom small{
+  color: var(--text-color);
 }
