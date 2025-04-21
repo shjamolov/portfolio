@@ -1,5 +1,44 @@
 {% extends 'base.html' %}
-{% block title %}portfolio{% endblock %}
+{% load static %}
+{% block title %}Portfolio Projects{% endblock %}
 {% block content %}
-<h1>portfolio Page</h1>
+
+<div class="portfolio-container">
+    <h1>My Projects</h1>
+
+    <!-- Filter buttons -->
+    <div class="filter-buttons">
+        <button class="filter-btn" data-category="all">All</button>
+        {% for cat in categories %}
+            <button class="filter-btn" data-category="{{ cat }}">{{ cat|title }}</button>
+        {% endfor %}
+    </div>
+
+    <!-- Projects Grid -->
+    <div class="project-grid">
+        {% for project in projects %}
+            <div class="project-card" data-category="{{ project.category }}">
+                <img src="{{ project.image.url }}" alt="{{ project.title }}">
+                <div class="card-body">
+                    <h3>{{ project.title }}</h3>
+                    <p>{{ project.description|truncatewords:15 }}</p>
+                    <p><strong>Technologies:</strong> {{ project.technologies }}</p>
+                    <div class="card-links">
+                        {% if project.github_link %}
+                            <a href="{{ project.github_link }}" target="_blank">GitHub</a>
+                        {% endif %}
+                        {% if project.live_demo_link %}
+                            <a href="{{ project.live_demo_link }}" target="_blank">Live Demo</a>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock %}
+
+{% block extra_js %}
+  <script src="{% static 'main/js/portfolio.js' %}"></script>
 {% endblock %}
