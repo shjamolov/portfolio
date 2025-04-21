@@ -1,3 +1,9 @@
+:root {
+    --primary-color: #00f0ff;
+    --secondary-color: #fff;
+    --text-color: #e0e0e0;
+}
+
 .hex {
     width: 80px;
     height: 80px;
@@ -31,7 +37,6 @@
 
 .hex.active {
     background-color: var(--primary-color);
-    /* box-shadow: 0 0 20px #00d4f8aa; */
 }
 
 .hex.active i {
@@ -178,7 +183,6 @@
 
 .about_hex.active {
     background-color: var(--primary-color);
-    /* box-shadow: 0 0 20px #00d4f8aa; */
 }
 
 .about_hex.active i {

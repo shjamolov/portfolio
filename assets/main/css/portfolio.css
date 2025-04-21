@@ -1,12 +1,13 @@
-.portfolio-container {
-    max-width: 1200px;
-    margin: auto;
+:root {
+    --primary-color: #00f0ff;
+    --secondary-color: #fff;
+    --text-color: #e0e0e0;
 }
 
 h1 {
     text-align: center;
     margin-bottom: 30px;
-    color: #00ffff;
+    color: var(--primary-color);
 }
 
 .filter-buttons {
@@ -16,8 +17,8 @@ h1 {
 
 .filter-btn {
     background-color: transparent;
-    color: #00ffff;
-    border: 1px solid #00ffff;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
     padding: 8px 16px;
     margin: 0 5px;
     cursor: pointer;
@@ -25,7 +26,7 @@ h1 {
 }
 
 .filter-btn:hover {
-    background-color: #00ffff;
+    background-color: var(--primary-color);
     color: #000;
 }
 
@@ -45,7 +46,7 @@ h1 {
 
 .project-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 0 10px #00ffff;
+    box-shadow: 0 0 10px var(--primary-color);
 }
 
 .project-card img {
@@ -59,13 +60,17 @@ h1 {
 }
 
 .card-body h3 {
-    color: #00ffff;
+    color: var(--primary-color);
     margin-top: 0;
+}
+
+.card-body p {
+    color: var(--text-color);
 }
 
 .card-links a {
     margin-right: 10px;
     text-decoration: none;
-    color: #00ffff;
+    color: var(--primary-color);
     font-weight: bold;
 }

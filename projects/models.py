@@ -11,7 +11,7 @@ class Project(models.Model):
 
     title = models.CharField(max_length=255)
     description = models.TextField()
-    image = models.ImageField(upload_to='upload_images/')
+    image = models.ImageField(upload_to='media/upload_images/')
     github_link = models.URLField(blank=True, null=True)
     live_demo_link = models.URLField(blank=True, null=True)
     technologies = models.CharField(max_length=255)  # Masalan: "Python, Django, HTML"

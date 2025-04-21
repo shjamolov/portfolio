@@ -3,7 +3,7 @@
 {% block title %}Portfolio Projects{% endblock %}
 {% block content %}
 
-<div class="portfolio-container">
+<div class="container">
     <h1>My Projects</h1>
 
     <!-- Filter buttons -->
@@ -28,7 +28,7 @@
                             <a href="{{ project.github_link }}" target="_blank">GitHub</a>
                         {% endif %}
                         {% if project.live_demo_link %}
-                            <a href="{{ project.live_demo_link }}" target="_blank">Live Demo</a>
+                            <a href="{{ project.live_demo_link }}" target="_blank">Live | Demo</a>
                         {% endif %}
                     </div>
                 </div>
