@@ -97,6 +97,10 @@ footer .social_section i:hover {
   color: var(--primary-color);
 }
 
+footer .contact .navbar-nav{
+  margin-left: 120px;
+}
+
 footer .contact .navbar-nav li {
   margin-right: 20px;
 }

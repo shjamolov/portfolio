@@ -1,0 +1,149 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-04-22 13:58+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
+"(n%100>=11 && n%100<=14)? 2 : 3);\n"
+#: templates/base.html:29 templates/base.html:83 templates/main/about.html:31
+msgid "About"
+msgstr "Обо мне"
+
+#: templates/base.html:30 templates/base.html:84
+msgid "Portfolio"
+msgstr "Портфолио"
+
+#: templates/base.html:31 templates/base.html:85
+msgid "Blog"
+msgstr "Блог"
+
+#: templates/base.html:69
+msgid "Contact"
+msgstr "Контакт"
+
+#: templates/main/about.html:12
+msgid "Hi! my name is Shukhrat Jamolov"
+msgstr "Привет! Меня зовут Шухрат Джамолов"
+
+#: templates/main/about.html:13
+msgid "Full Stack Python Developer | Technology Enthusiast"
+msgstr "Full Stack Python разработчик | Технологический энтузиаст"
+
+#: templates/main/about.html:22
+msgid "Tashkent | Uzbekistan"
+msgstr "Ташкент | Узбекистан"
+
+#: templates/main/about.html:26
+msgid ""
+"\"I aim to solve problems through my own solutions in programming and aspire "
+"to work in the\n"
+"      field of data science in the future.\""
+msgstr ""
+"\"Разрабатываю программные решения, которые упрощают бизнес-процессы. "
+"Планирую развиваться в машинном"
+"обучении и работе с Big Data.\""
+
+#: templates/main/about.html:35
+msgid ""
+"Hello! I’m Shukhrat Jamolov, a 31-year-old Full Stack Python Developer with "
+"a strong passion for\n"
+"            solving real-world problems through clean and efficient code. "
+"Since 2018, I’ve been working at\n"
+"            United Distribution as a 1C Database Operator, where I manage "
+"and maintain critical business data.\n"
+"            My goal is to continuously grow as a developer and contribute to "
+"impactful, tech-driven solutions.\n"
+"            "
+msgstr ""
+"Привет! Я Шухрат Джамолов, 31-летний Full Stack Python разработчик, "
+"увлеченный созданием чистого и эффективного кода для решения реальных задач. "
+"С 2018 года работаю в United Distribution оператором баз данных 1С, где "
+"управляю критически важной бизнес-информацией. Моя цель — постоянное "
+"профессиональное развитие и участие в создании технологичных решений с "
+"ощутимым impact."
+
+#: templates/main/about.html:43
+msgid ""
+"I began my programming journey in 2018 by completing a Frontend Development "
+"course at Proweb Academy.\n"
+"            Later, in 2024, I strengthened my skills by graduating from the "
+"Full Stack Python Developer course\n"
+"            at Bobir Akilkhanov Academy. My technical expertise includes "
+"Python, Django, MySQL, as well as HTML,\n"
+"            CSS, and JavaScript."
+msgstr ""
+"Мой путь в программировании начался в 2018 году с прохождения курса по "
+"Frontend-разработке в Proweb Academy. Позже, в 2024 году, я углубил свои "
+"навыки, окончив курс Full Stack Python Developer в академии Бобира "
+"Акилханова. Мои технические знания включают Python, Django, MySQL, а также "
+"HTML, CSS и JavaScript."
+
+#: templates/main/about.html:49
+msgid ""
+"I am committed to establishing myself in the field of Data Science by "
+"mastering deep analytics and\n"
+"            machine learning technologies to solve real-world problems. In "
+"2025, I plan to dive deeper into this\n"
+"            field and expand my knowledge and skills."
+msgstr ""
+"Я намерен укрепиться в сфере Data Science, освоив углубленную аналитику и "
+"технологии машинного обучения для решения реальных задач. В 2025 году я "
+"планирую углубиться в эту область и расширить свои знания и навыки."
+
+#: templates/main/about.html:63
+msgid "Hard & Soft Skills"
+msgstr "Технические & Гибкие навыки"
+
+#: templates/main/about.html:171
+msgid "Communication"
+msgstr "Коммуникатция"
+
+#: templates/main/about.html:183
+msgid "Teamwork"
+msgstr "Командная работа"
+
+#: templates/main/about.html:195
+msgid "Problem Solving"
+msgstr "Решение проблем"
+
+#: templates/main/about.html:207
+msgid "Time Management"
+msgstr "Тайм-менеджмент"
+
+#: templates/main/about.html:219
+msgid "Adaptability"
+msgstr "Адаптивность"
+
+#: templates/main/about.html:231
+msgid "Self-learning"
+msgstr "Самообучение"
+
+#: templates/main/about.html:243
+msgid "Critical Thinking"
+msgstr "Критическое мышление"
+
+#: templates/main/about.html:255
+msgid "Leadership"
+msgstr "Лидерство"
+
+#: templates/main/blog.html:6
+msgid "the page is under construction"
+msgstr "Страница в разработке"
+
+#: templates/main/portfolio.html:26
+msgid "Technologies"
+msgstr "Технологии"
