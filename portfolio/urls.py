@@ -9,7 +9,7 @@ urlpatterns = [
 ]
 
 urlpatterns += i18n_patterns(
-    path('admin/', admin.site.urls),
+    path('admin-panelga-kirish-uchun-url/', admin.site.urls),
     path('', include('main.urls')),
     path('', include('projects.urls')),
 )
