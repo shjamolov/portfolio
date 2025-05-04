@@ -7,7 +7,7 @@
 .hex {
     width: 80px;
     height: 80px;
-    background-color: #000;
+    background-color: #000000;
     clip-path: polygon(25% 5.77%,
             75% 5.77%,
             100% 50%,
@@ -48,8 +48,8 @@
     z-index: 99 !important;
     position: absolute;
     background-color: #000;
-    top: 30%;
-    right: 6.6%;
+    top: 28%;
+    right: 6%;
     padding: 0px 9px;
     text-align: center;
 }
