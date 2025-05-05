@@ -47,27 +47,35 @@
 .main_right {
     z-index: 99 !important;
     position: absolute;
-    background-color: #000;
+    background-color: transparent;
     top: 28%;
     right: 6%;
     padding: 0px 9px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .main_right h1 {
     font-size: 56px;
     color: var(--primary-color);
     font-weight: 900;
+    background-color: black;
 }
 
 .main_right p {
     font-size: 24px;
     color: var(--text-color);
     margin-top: 36px;
+    background-color: black;
+    width: fit-content;
 }
 
 .main_right .social_section {
     margin: 25px 0px;
+    background-color: black;
+    width: fit-content;
 }
 
 .main_right .social_section i {
@@ -85,6 +93,8 @@
 .main_right span {
     font-size: 22px;
     color: var(--text-color);
+    background-color: black;
+    width: fit-content;
 }
 
 .main_right span i {
