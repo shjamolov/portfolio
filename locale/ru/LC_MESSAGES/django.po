@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-22 13:58+0500\n"
+"POT-Creation-Date: 2025-05-06 09:49+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,19 +19,19 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
 "(n%100>=11 && n%100<=14)? 2 : 3);\n"
-#: templates/base.html:29 templates/base.html:83 templates/main/about.html:31
+#: templates/base.html:37 templates/base.html:91 templates/main/about.html:31
 msgid "About"
 msgstr "Обо мне"
 
-#: templates/base.html:30 templates/base.html:84
+#: templates/base.html:38 templates/base.html:92
 msgid "Portfolio"
 msgstr "Портфолио"
 
-#: templates/base.html:31 templates/base.html:85
+#: templates/base.html:39 templates/base.html:93
 msgid "Blog"
 msgstr "Блог"
 
-#: templates/base.html:69
+#: templates/base.html:77
 msgid "Contact"
 msgstr "Контакт"
 
@@ -54,13 +54,12 @@ msgid ""
 "      field of data science in the future.\""
 msgstr ""
 "\"Разрабатываю программные решения, которые упрощают бизнес-процессы. "
-"Планирую развиваться в машинном"
-"обучении и работе с Big Data.\""
+"Планирую развиваться в машинномобучении и работе с Big Data.\""
 
 #: templates/main/about.html:35
 msgid ""
-"Hello! I’m Shukhrat Jamolov, a 31-year-old Full Stack Python Developer with "
-"a strong passion for\n"
+"Hello! I’m Shukhrat Jamolov, a <span id=\"myAge\"></span>-year-old Full "
+"Stack Python Developer with a strong passion for\n"
 "            solving real-world problems through clean and efficient code. "
 "Since 2018, I’ve been working at\n"
 "            United Distribution as a 1C Database Operator, where I manage "
@@ -69,12 +68,11 @@ msgid ""
 "impactful, tech-driven solutions.\n"
 "            "
 msgstr ""
-"Привет! Я Шухрат Джамолов, 31-летний Full Stack Python разработчик, "
-"увлеченный созданием чистого и эффективного кода для решения реальных задач. "
-"С 2018 года работаю в United Distribution оператором баз данных 1С, где "
-"управляю критически важной бизнес-информацией. Моя цель — постоянное "
-"профессиональное развитие и участие в создании технологичных решений с "
-"ощутимым impact."
+"Привет! Я Шухрат Джамолов, <span id=\"myAge\"></span>-летний Full Stack Python разработчик, увлеченный "
+"созданием чистого и эффективного кода для решения реальных задач. С 2018 "
+"года работаю в United Distribution оператором баз данных 1С, где управляю "
+"критически важной бизнес-информацией. Моя цель — постоянное профессиональное "
+"развитие и участие в создании технологичных решений с ощутимым impact."
 
 #: templates/main/about.html:43
 msgid ""

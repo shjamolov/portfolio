@@ -198,3 +198,10 @@ skills.forEach((skill) => observer.observe(skill));
 // ===============================================================================
 
 
+const birthYear = 1993;
+const currentYear = new Date().getFullYear();
+const age = currentYear - birthYear;
+
+document.getElementById("myAge").textContent = age;
+
+// =======================================================================================

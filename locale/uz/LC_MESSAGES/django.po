@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-22 13:58+0500\n"
+"POT-Creation-Date: 2025-05-06 09:49+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,19 +17,19 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-#: templates/base.html:29 templates/base.html:83 templates/main/about.html:31
+#: templates/base.html:37 templates/base.html:91 templates/main/about.html:31
 msgid "About"
 msgstr "Men haqimda"
 
-#: templates/base.html:30 templates/base.html:84
+#: templates/base.html:38 templates/base.html:92
 msgid "Portfolio"
 msgstr "Loyihalar"
 
-#: templates/base.html:31 templates/base.html:85
+#: templates/base.html:39 templates/base.html:93
 msgid "Blog"
 msgstr "Blog"
 
-#: templates/base.html:69
+#: templates/base.html:77
 msgid "Contact"
 msgstr "Kontakt"
 
@@ -51,14 +51,13 @@ msgid ""
 "to work in the\n"
 "      field of data science in the future.\""
 msgstr ""
-"\"Men dasturlash orqali muammolarga yechim topishni "
-"maqsad qilganman va "
+"\"Men dasturlash orqali muammolarga yechim topishni maqsad qilganman va "
 "kelajakda data science sohasida muhandis bo'lishni istayman.\""
 
 #: templates/main/about.html:35
 msgid ""
-"Hello! I’m Shukhrat Jamolov, a 31-year-old Full Stack Python Developer with "
-"a strong passion for\n"
+"Hello! I’m Shukhrat Jamolov, a <span id=\"myAge\"></span>-year-old Full "
+"Stack Python Developer with a strong passion for\n"
 "            solving real-world problems through clean and efficient code. "
 "Since 2018, I’ve been working at\n"
 "            United Distribution as a 1C Database Operator, where I manage "
@@ -67,7 +66,7 @@ msgid ""
 "impactful, tech-driven solutions.\n"
 "            "
 msgstr ""
-"Salom! Men Shukhrat Jamolovman, 31 yoshdaman va Full Stack Python "
+"Salom! Men Shukhrat Jamolovman,  <span id=\"myAge\"></span> yoshdaman va Full Stack Python "
 "dasturchisiman. Haqiqiy hayotdagi muammolarni toza va samarali kod orqali "
 "hal qilish ishtiyoqmandiman. 2018-yildan buyon United Distribution "
 "kompaniyasida 1C ma’lumotlar bazasi operatori sifatida ishlayman,bu yerda "
@@ -90,7 +89,6 @@ msgstr ""
 "Akilkhanov Academy’da Full Stack Python Developer kursini tugatib, o‘z bilim "
 "va ko‘nikmalarimni yanada mustahkamladim. Texnik bilimlarim Python, Django, "
 "MySQL, shuningdek HTML, CSS va JavaScript texnologiyalarini o‘z ichiga oladi."
-
 
 #: templates/main/about.html:49
 msgid ""
