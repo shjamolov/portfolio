@@ -26,14 +26,7 @@ SECRET_KEY = 'django-insecure-ey1_xb*6dutd6cj1h$+jyj56ifbnr8lwbah7!&-qcmswc4wz&i
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
-
-# SECURE_BROWSER_XSS_FILTER = False
-# X_FRAME_OPTIONS = 'DENY'
-# CSRF_COOKIE_SECURE = False  # HTTPS uchun
-# SESSION_COOKIE_SECURE = False  # HTTPS uchun
-# SECURE_SSL_REDIRECT = False  # HTTP → HTTPS
+ALLOWED_HOSTS = ["shukhrat-jamolov.uz"]
 
 
 # Application definition

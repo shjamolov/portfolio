@@ -1,0 +1,362 @@
+:root {
+    --primary-color: #00f0ff;
+    --secondary-color: #fff;
+    --text-color: #e0e0e0;
+}
+
+.hex {
+    width: 80px;
+    height: 80px;
+    background-color: #000000;
+    clip-path: polygon(25% 5.77%,
+            75% 5.77%,
+            100% 50%,
+            75% 94.23%,
+            25% 94.23%,
+            0% 50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+}
+
+.hex i {
+    font-size: 36px;
+    color: #000;
+    transition: transform 0.4s ease;
+}
+
+.hex:hover {
+    background-color: var(--primary-color);
+    cursor: pointer;
+}
+
+.hex:hover i {
+    color: #000000;
+}
+
+.hex.active {
+    background-color: var(--primary-color);
+}
+
+.hex.active i {
+    transform: scale(1.3);
+    color: #000;
+}
+
+.main_right {
+    z-index: 99 !important;
+    position: absolute;
+    background-color: transparent;
+    top: 28%;
+    right: 6%;
+    padding: 0px 9px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main_right h1 {
+    font-size: 56px;
+    color: var(--primary-color);
+    font-weight: 900;
+    background-color: black;
+}
+
+.main_right p {
+    font-size: 24px;
+    color: var(--text-color);
+    margin-top: 36px;
+    background-color: black;
+    width: fit-content;
+}
+
+.main_right .social_section {
+    margin: 25px 0px;
+    background-color: black;
+    width: fit-content;
+}
+
+.main_right .social_section i {
+    font-size: 36px;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+    color: var(--text-color);
+}
+
+.main_right .social_section i:hover {
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.main_right span {
+    font-size: 22px;
+    color: var(--text-color);
+    background-color: black;
+    width: fit-content;
+}
+
+.main_right span i {
+    margin-right: 10px;
+}
+
+.main_bottom {
+    width: 100%;
+    text-align: center;
+}
+
+.main_bottom p {
+    font-size: 18px;
+    color: var(--text-color);
+}
+
+@keyframes waveColor {
+    0% {
+        color: var(--text-color);
+    }
+
+    25% {
+        color: var(--primary-color);
+    }
+
+    75% {
+        color: var(--primary-color);
+    }
+
+    100% {
+        color: var(--text-color);
+    }
+}
+
+#animated-text span {
+    display: inline-block;
+    color: var(--text-color);
+}
+
+.about {
+    width: 100%;
+    padding: 96px 48px;
+}
+
+.about h2 {
+    font-size: 48px;
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 48px;
+    font-weight: 900;
+}
+
+.about .about_container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about_content {
+    width: 45%;
+}
+
+.about_content p {
+    font-size: 20px;
+    line-height: 2;
+    color: var(--text-color);
+}
+
+.about_hex_animation {
+    width: 55%;
+}
+
+.about_hex_grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 5px;
+}
+
+.about_hex {
+    width: 80px;
+    height: 80px;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+}
+
+.about_hex i {
+    color: #000;
+    font-size: 36px;
+    transition: transform 0.4s ease;
+}
+
+.about_hex.active {
+    background-color: var(--primary-color);
+}
+
+.about_hex.active i {
+    transform: scale(1.3);
+    color: #000;
+}
+
+.about_hex:hover {
+    background-color: var(--primary-color);
+    cursor: pointer;
+}
+
+/* ================================================================= */
+.skills {
+    width: 100%;
+    padding: 96px 0px;
+}
+
+.skills h2 {
+    font-size: 48px;
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 56px;
+    font-weight: 900;
+}
+
+.skills .hard,
+.skills .soft {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills .hard {
+    margin-bottom: 56px;
+}
+
+.skills .hard .skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills .hard .circle-container {
+    position: relative;
+    width: 120px;
+    height: 120px;
+}
+
+.skills .hard svg {
+    width: 100%;
+    height: 100%;
+    transform: rotate(-90deg);
+}
+
+.skills .hard circle {
+    fill: none;
+    stroke-width: 10;
+    cx: 60;
+    cy: 60;
+    r: 50;
+}
+
+.skills .hard circle.bg {
+    stroke: #222;
+}
+
+.skills circle.progress {
+    stroke: var(--primary-color);
+    stroke-dasharray: 314;
+    stroke-dashoffset: 314;
+    transition: stroke-dashoffset 1s linear;
+}
+
+.skills .hard .icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+    font-size: 30px;
+    color: var(--primary-color);
+}
+
+.skills .hard .percentage {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.skills .hard .tech-name {
+    margin-top: 10px;
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 18px;
+}
+
+/* ================================================================ */
+.skill {
+    width: 130px;
+    text-align: center;
+}
+
+.skills .soft .skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills .soft .circle-container {
+    position: relative;
+    width: 120px;
+    height: 120px;
+}
+
+.skills .soft svg {
+    width: 100%;
+    height: 100%;
+    transform: rotate(-90deg);
+}
+
+.skills .soft circle {
+    fill: none;
+    stroke-width: 10;
+    cx: 60;
+    cy: 60;
+    r: 50;
+}
+
+.skills .soft circle.bg {
+    stroke: #222;
+}
+
+.skills .soft circle.progress {
+    stroke: var(--primary-color);
+    stroke-dasharray: 314;
+    stroke-dashoffset: 314;
+    transition: stroke-dashoffset 1s linear;
+}
+
+.skills .soft .icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+    font-size: 30px;
+    color: var(--primary-color);
+}
+
+.skills .soft .percentage {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.skills .soft .tech-name {
+    margin-top: 10px;
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 18px;
+}
