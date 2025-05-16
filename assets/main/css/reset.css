@@ -11,6 +11,10 @@ html, body {
     line-height: 1.5;
     background-color: #000;
 }
+body {
+    scrollbar-width: thin; /* Firefox uchun */
+    scrollbar-color: #00f0ff #000; /* Firefox uchun */
+}
   
 ul, ol {
     list-style: none;
